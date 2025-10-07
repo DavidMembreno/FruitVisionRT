@@ -1,0 +1,23 @@
+train: data/detection/train.txt
+val: data/detection/val.txt
+test: data/detection/test.txt
+
+nc: 17
+names:
+  - apple
+  - banana
+  - orange
+  - strawberry
+  - grapes
+  - watermelon
+  - lemon
+  - kiwi
+  - mango
+  - peach
+  - pineapple
+  - pomegranate
+  - tomato
+  - avocado
+  - cucumber
+  - pear
+  - cherry
