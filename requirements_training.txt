@@ -1,0 +1,13 @@
+# Additional dependencies for training only (not needed to run main_final.py)
+jupyterlab
+torch  # GPU/CUDA version must be installed manually based on your hardware
+torchvision
+scikit-learn
+seaborn
+pandas
+tensorboard
+onnx
+onnxruntime
+tf2onnx
+onnx2tf
+tensorflow-addons

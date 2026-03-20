@@ -1,6 +1,9 @@
+venv/
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+*.pyo
 .DS_Store
-Thumbs.db
-*.log
+*.egg-info/
+dist/
+build/
+venv_win/
