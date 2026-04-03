@@ -2,6 +2,8 @@
 
 Real-time fruit detection and classification for desktop (GPU) and Raspberry Pi 4.
 
+![FruitVisionRT Demo](docs/demo.gif)
+
 This refined codebase contains only the files that directly contributed to the final system.
 Older versions and unused checkpoints have been excluded for clarity.
 
@@ -154,7 +156,35 @@ Early prototypes, not needed for the final system.
 
 ## Docker (Coming Soon)
 
-A Dockerfile will be provided to run `main_final.py` in a containerized environment without manual dependency setup. Target: CPU-only inference, webcam passthrough.
+Run FruitVisionRT without any manual Python or dependency setup using Docker.
+
+### Prerequisites
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
+- A webcam connected to your machine (Linux only for live feed)
+
+### Run with Docker (Linux)
+```bash
+xhost +local:docker
+docker compose up
+```
+
+That's it. Docker will pull the image from Docker Hub automatically and launch the app with your webcam and full GUI.
+
+### Platform Notes
+
+| Platform | GUI | Live Webcam Feed |
+|---|---|---|
+| Linux (native) | Yes | Yes |
+| Windows WSL2 | Yes | No — WSL2 does not expose webcam as `/dev/video0` |
+| macOS | Requires [XQuartz](https://www.xquartz.org/) | Limited |
+| Windows (native) | Not recommended | No |
+
+> The demo GIF above shows the full live detection experience on Linux.
+
+### Docker Hub
+
+The prebuilt image is available at:
+[`docker.io/davidmembreno/fruitvisionrt`](https://hub.docker.com/r/davidmembreno/fruitvisionrt)
 
 ---
 
