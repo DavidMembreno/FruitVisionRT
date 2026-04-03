@@ -154,7 +154,7 @@ Early prototypes, not needed for the final system.
 
 ---
 
-## Docker (Coming Soon)
+## Docker
 
 Run FruitVisionRT without any manual Python or dependency setup using Docker.
 
