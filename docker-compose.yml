@@ -1,0 +1,10 @@
+services:
+  fruitvisionrt:
+    image: davidmembreno/fruitvisionrt
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    # devices:
+    #   - /dev/video0:/dev/video0
+    network_mode: host

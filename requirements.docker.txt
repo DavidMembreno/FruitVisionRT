@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+tensorflow-cpu==2.10.0
+keras==2.10.0
+torch==2.10.0+cpu
+torchvision==0.25.0+cpu
+opencv-python==4.8.0.76
+numpy==1.23.5
+pillow==12.1.1
+customtkinter
+ultralytics==8.4.24
+matplotlib
